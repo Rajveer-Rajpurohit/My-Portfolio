@@ -1,0 +1,25 @@
+.projects {
+    padding: 50px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    color: white;
+    transition: 0.3s;
+    background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}

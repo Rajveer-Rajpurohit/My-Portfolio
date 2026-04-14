@@ -1,0 +1,26 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    /* background-color: #0a0a0a; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 10px pink dotted;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 400px;
+    width: auto;
+    border: green 5px dashed;
+}
+#contact-form{
+    border: 5px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
