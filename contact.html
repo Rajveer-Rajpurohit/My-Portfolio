@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Portfolio-contactUs</title>
     <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
-    <div class="container">
-        <form id="contact-form">
-            <label for="name">Name</label>
-            <input type="text" placeholder="
-            Enter Your Name" required>
-            <label for="email">Email</label>
-            <input type="email" placeholder="
-            Enter Your Email" required>
-            <label for="number">Mobile Number</label>
-            <input type="text" placeholder="
-            Enter Your Mobile Number" required>
-            <label for="git">Link</label>
-            <input type="text" placeholder="
-            Enter Your Github Link" required>
-        </form>
-    </div>
+    <header>
+        <nav>
+            <div style="color: antiquewhite;" class="logo">Portfolio</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Qualification</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="contact-card">
+                <h2>Get In Touch</h2>
+                <p>I'm open to collaborations, freelance work, or just a tech chat.</p>
+
+                <form id="contact-form">
+
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="" autocomplete="off" required>
+                        <label for="name">Name</label>
+                        <span class="error">Please Fill This Field.</span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder="" autocomplete="off">
+                        <label for="email">Email</label>
+                        <span class="error">Invalid Email Detected.</span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="url" id="linkedin" placeholder="" required >
+                        <label for="linkedin">Linkedin Link</label>
+                        <span class="error">Invalid URL!!!</span>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea id="message" placeholder="" required></textarea>
+                        <label for="message">Message</label>
+                        <span class="error">Please Enter Your Message.</span>
+                    </div>
+                    <input type="submit" value="Send Message">
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Rajveer Rajpurohit, 2026</p>
+    </footer>
+    <script src="formValidation.js"></script>
 </body>
+
 </html>
