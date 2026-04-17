@@ -15,3 +15,9 @@ document.getElementById("prev").onclick = () => {
     index = (index - 1 + cards.length)%cards.length;
     updateCarousel();
 };
+cards.forEach((card,i) =>{
+    card.addEventListener('mouseenter',() => {
+        index = i;
+        updateCarousel();
+    });
+});

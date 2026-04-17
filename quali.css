@@ -51,13 +51,13 @@ a:hover{
     padding: 5px;
 }
 
-.active{
+nav .active{
     color: rgb(187, 21, 33);
     text-decoration:underline rgb(69, 135, 69);
     text-underline-offset: 4px;
 
 }
-.active:hover{
+nav .active:hover{
     text-decoration: underline rgb(187, 21, 33);
     color: rgb(81, 228, 81);
     text-shadow: 0 0 8px rgb(81,228,81);
@@ -202,7 +202,7 @@ h3{
 
 .carousel {
     display: flex;
-    overflow: hidden;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
