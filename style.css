@@ -10,6 +10,7 @@ body{
     background-size: 20px 20px;
     height: 100vh;
     width: auto;
+    overflow: auto;
 }
 header{
     background-color: #111111;
